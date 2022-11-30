@@ -21,7 +21,7 @@ nav{
     font-style: initial;
     border-bottom: 1px solid yellowgreen;
     top: 0;
-    
+    position: fixed;
     width: 100%;
     
 }
@@ -244,3 +244,52 @@ button{
 .card-text:hover{
     color: beige;
 }
+
+@media screen and (max-width:650px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .sticky{
+        display: inline-block;
+        margin-left: 0px;
+    }
+    #nav-menu{
+    display: inline-block;;
+    }
+    .note{
+        font-size: 20px;
+        left: 0;
+    }
+
+   
+   #middle{
+    position: absolute;
+    margin: 31vh 26vh;
+    left: 2vw;
+    
+}  
+
+#end{
+    position: absolute;
+    margin: 39vh ;
+
+    .first-half{
+        display: block;
+    }
+.image-holder{
+    position: absolute;
+    margin: 90vh 25vh;
+    height: 12px;
+}
+#image{
+    height: 30px;
+    width: 2px;
+}
+
+#big{
+    display: block;
+}
+
+}
+    
