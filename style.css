@@ -1,0 +1,246 @@
+*{
+    margin: 0%;
+}
+
+
+.compname{
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    border-color: antiquewhite;
+}
+
+nav{
+   
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    font-size: 1.2rem;
+    font-style: initial;
+    border-bottom: 1px solid yellowgreen;
+    top: 0;
+    
+    width: 100%;
+    
+}
+
+#nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+   width: 26vw;
+}
+
+
+
+#nav-item{
+    color: white;
+    text-decoration: none;
+}
+.first-half{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+
+}
+.heading{
+    background-color: black;
+    height: 50vh;
+    padding: 15px;
+    margin-top: 80px;
+}
+
+.note{
+    
+    
+width: 1050px;
+height: 74px;
+left: 45px;
+top: 126px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 40;
+font-size: 150px;
+line-height: 220px;
+display: grid;
+grid-template-rows: ;
+color: #FFFFFF;
+}
+
+#middle{
+    position: absolute;
+    margin-top: 27vh;
+    margin-left: 200px;
+}
+    #end{
+        position: absolute;
+        margin-top: 45vh;
+        margin-left: 1px;
+}
+
+.image-holder{
+    background-color: black;
+    margin-left: 970px;
+    margin-top: 220px;
+    
+    position: absolute;
+}
+
+.second-half{
+    display: flex;
+    display: block;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 160px;
+    margin-left: 10px;
+}
+
+
+
+#big{
+    display: block;
+   position: absolute;
+   right: 505px; 
+   font-weight: 100000;
+   font-size: 50px;
+   font-family: 'Inter';
+}
+
+.about-image{
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+}
+
+.para{
+    position: absolute;
+    top: 1040px;
+    right: 5px;
+    left: 722px;
+}
+
+aside{
+    position: absolute;
+    top: 230vh;
+    left: 90px;
+    display: block;
+    
+}
+
+.services{
+    background-color: coral;
+    display: inline-block;
+    height: 50px;
+    border: 1px solid rgb(52, 50, 45);
+    border-radius: 10px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 105vw;
+    height: 70vh;
+    border-bottom: 4px solid black;
+}
+
+
+.contact-us{
+    display: grid;
+    place-content: center;
+    background-color: aqua;
+}
+
+button{
+   position: relative;
+    background-color: aqua;
+    left: 88px;
+}
+
+@keyframes elhan{
+    0%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+#big{
+    animation: elhan 1s infinite alternate;
+}
+
+.scroll{
+    height: 50px;
+    width: 30px;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    border-radius: 50px;
+    cursor: pointer;
+    left: 700px;
+    top: 675px;
+}
+
+.scroll::before,
+.scroll::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent ;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+.card-text{
+    position: relative;
+    z-index: 1;
+    color: black;
+    transition: 0.3s;
+}
+
+.card-text::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s all;
+    color: black;
+}
+
+.card-text:hover::before{
+    width: 100%;
+}
+
+.card-text:hover{
+    color: beige;
+}
